@@ -17,13 +17,9 @@ closeBtn.addEventListener("click", function(){
 
 //close through the escape key
 document.addEventListener("keydown", function(e){
-    //if the overlay is open, users can close the modal
     if(e.key === "Escape"){
         overlayWindow.style.display = "none";
         }
-    //if there's no overlay, nothing happens.
-    console.log(e);
-    console.log(e.key);
 })
 
 //close through clicking anywhere outside the modal box
@@ -31,5 +27,4 @@ document.addEventListener("click", function(e){
     if(e.target === overlayWindow){
         overlayWindow.style.display = "none"
     }
-    console.log(e.target)
 })
